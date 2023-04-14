@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "PTSerif";
+  src: url('./assets/PTSerif-Regular.ttf');
+}
+
+@font-face {
+  font-family: "PTSerifBold";
+  src: url('./assets/PTSerif-Bold.ttf');
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -32,8 +42,20 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 4em;
+  line-height: 1.5;
+  font-family: PTSerifBold;
+  margin: 0.25em 0;
+}
+
+h2 {
+  font-family: PTSerif;
+  margin: 0;
+}
+
+p {
+  font-size: 1.25em;
+  text-align: start;
 }
 
 .card {
@@ -43,7 +65,6 @@ h1 {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -51,12 +72,13 @@ button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin: auto;
 }
 button:hover {
   border-color: #646cff;
@@ -65,4 +87,5 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
 
